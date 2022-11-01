@@ -6,6 +6,7 @@ int main()
     int ret;
 
     ret = test_stack();
+    ret = test_helpers();
 
     return ret;
 }

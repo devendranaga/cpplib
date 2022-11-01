@@ -7,7 +7,8 @@ set(SRC
 
 set(TEST_SRC
     test/test_main.cpp
-    test/test_stack.cpp)
+    test/test_stack.cpp
+    test/test_helpers.cpp)
 
 include_directories(./include/)
 
