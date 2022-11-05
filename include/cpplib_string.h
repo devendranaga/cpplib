@@ -71,6 +71,20 @@ class string {
          */
         const char *c_str() { return (const char *)ptr_; }
 
+        /**
+         * @brief - Index into the string.
+         *
+         * @return character.
+         */
+        char operator[](size_t idx) { return this->ptr_[idx]; }
+
+        /**
+         * @brief - Return the value at(index).
+         *
+         * @return character at index.
+         */
+        char at(size_t idx) { return this->ptr_[idx]; }
+
     private:
         char *ptr_ = nullptr;
         int len_ = 0;
