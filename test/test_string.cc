@@ -15,6 +15,14 @@ int test_cpplib_string()
     printf("a length: %lu data: %s\n", a.len(), a.c_str());
     printf("o length: %lu data: %s\n", o.len(), o.c_str());
 
+    int i = 0;
+
+    while (o[i] != '\0') {
+        printf("'%c'", o[i]);
+        i ++;
+    }
+    printf("\n");
+
     return 0;
 }
 
