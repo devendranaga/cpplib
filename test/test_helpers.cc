@@ -1,4 +1,4 @@
-#include <iostream>
+#include <stdio.h>
 #include <cpplib_helpers.h>
 
 int test_helpers()

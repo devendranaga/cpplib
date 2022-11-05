@@ -1,4 +1,4 @@
-#include <iostream>
+#include <stdio.h>
 #include "cpplib_stack.h"
 
 int test_stack()
