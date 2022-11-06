@@ -8,6 +8,7 @@ int main()
     ret = test_stack();
     ret = test_helpers();
     ret = test_cpplib_string();
+    ret = test_array();
 
     return ret;
 }

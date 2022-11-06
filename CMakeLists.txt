@@ -10,7 +10,8 @@ set(TEST_SRC
     test/test_main.cc
     test/test_stack.cc
     test/test_helpers.cc
-    test/test_string.cc)
+    test/test_string.cc
+    test/test_array.cc)
 
 include_directories(./include/)
 
