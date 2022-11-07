@@ -9,6 +9,7 @@ int main()
     ret = test_helpers();
     ret = test_cpplib_string();
     ret = test_array();
+    ret = test_vector();
 
     return ret;
 }
