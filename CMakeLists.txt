@@ -12,7 +12,8 @@ set(TEST_SRC
     test/test_helpers.cc
     test/test_string.cc
     test/test_array.cc
-    test/test_vector.cc)
+    test/test_vector.cc
+    test/test_queue.cc)
 
 include_directories(./include/)
 

@@ -132,7 +132,7 @@ class vector {
         /**
          * @brief - Erase the particular item in the Vector.
          *
-         * @param[in] iterator - element in the vector
+         * @param[in] iterator - iterator object
          */
         void erase(iterator &it) {
             /**
@@ -153,6 +153,37 @@ class vector {
                 free(it.cur_);
             }
             len_ --;
+        }
+
+        /**
+         * @brief - Insert an element in the vector at a given
+         *          iterator position.
+         *
+         * @param[in] iterator - iterator object.
+         * @param[in] T - element to add to the vector.
+         */
+        int insert(iterator &it, T elem) {
+            if (it.cur_ == nullptr) {
+                return -1;
+            }
+
+            node *n;
+
+            n = (node *)calloc(1, sizeof(node));
+            if (!n) {
+                return -1;
+            }
+            n->item = elem;
+
+            /* Make links between the new node created
+             * with the cur and next pointers
+             */
+            n->prev = it.cur_;
+            n->next = it.cur_->next;
+            it.cur_->next->prev = n;
+            it.cur_->next = n;
+
+            return 0;
         }
     private:
         /**

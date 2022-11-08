@@ -10,6 +10,7 @@ int main()
     ret = test_cpplib_string();
     ret = test_array();
     ret = test_vector();
+    ret = test_queue();
 
     return ret;
 }
