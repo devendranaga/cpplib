@@ -7,7 +7,8 @@ set(SRC
     src/cpplib_string.cc)
 
 set(C_SRC
-    src/c/c_string.c)
+    src/c/c_string.c
+    src/c/c_list.c)
 
 set(TEST_SRC
     test/test_main.cc
